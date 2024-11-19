@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lip Syncing</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming your CSS is in styles.css -->
+        <!-- Link to the main CSS file for dashboard styling -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/lipsyncing.css') }}">
+
+        <!-- Icons libraries -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Sidebar -->
