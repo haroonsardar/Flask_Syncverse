@@ -9,7 +9,7 @@ public_url = ngrok.connect(5000)
 print("Ngrok URL:", public_url)
 
 # Initialize the Flask application
-app = Flask(__name__, template_folder="Flaskcode_Syncverse/templates", static_folder="Flaskcode_Syncverse/static")
+app = Flask(__name__, template_folder="Flask_Syncverse/templates", static_folder="Flask_Syncverse/static")
 app.secret_key = 'your_secret_key'  # Set a secret key for session management and flash messages
 
 # Temporary "database" replacement (in-memory dictionary)
