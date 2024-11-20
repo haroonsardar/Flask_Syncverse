@@ -45,14 +45,14 @@
                         {{ error }}
                     </div>
                 {% endif %}
-                <form method="POST" action="/lipsyncing" enctype="multipart/form-data">
-                    <div class="upload-container">
-                        <label for="video_file">Video File:</label>
-                        <input type="file" id="video_file" name="video_file" required value="{{ video_file }}">
+                <form method="POST" action="/lipsyncing">
+                    <div>
+                        <label>Video File:</label>
+                        <p>{{ video_file }}</p>
                     </div>
-                    <div class="upload-container">
-                        <label for="audio_file">Audio File:</label>
-                        <input type="file" id="audio_file" name="audio_file" required value="{{ audio_file }}">
+                    <div>
+                        <label>Audio File:</label>
+                        <p>{{ audio_file }}</p>
                     </div>
                     <button type="submit" class="sync-button">Start Lip Syncing</button>
                 </form>
