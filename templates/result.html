@@ -4,7 +4,7 @@
     <!-- Meta Tags for Responsiveness and Character Encoding -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | SyncVerse App</title>
+    <title>Result | SyncVerse App</title>
 
     <!-- External Stylesheets and Icons -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
@@ -66,7 +66,7 @@
         <div class="content">
             <div class="profile-section">
                 <video controls style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);">
-                    <source src="{{ url_for('static', filename='path/to/your/video.mp4') }}" type="video/mp4">
+                    <source src="{{ url_for('static', filename=video_filename) }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
